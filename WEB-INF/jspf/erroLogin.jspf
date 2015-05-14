@@ -1,0 +1,14 @@
+<aside>
+    <div class="control-group" id="divEmail">
+        <label class="control-label" for="inputEmail"></label>
+        <div class="controls" style="text-align: center;">
+            <span class="help-inline" id="erroEmail" style="font-size: 20px;">Insira um e-mail válido.</span>
+        </div>
+    </div>
+    <div class="control-group" id="divSenha">
+        <label class="control-label" for="inputSenha"></label>
+        <div class="controls" style="text-align: center;">
+            <span class="help-inline" id="erroSenha" style="font-size: 20px;">Insira uma senha com pelo menos 6 caracteres.</span>
+        </div>
+    </div>
+</aside>

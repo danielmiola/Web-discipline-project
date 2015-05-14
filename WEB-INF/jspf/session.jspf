@@ -1,0 +1,11 @@
+<%@page import="model.UsuarioBean"%>
+<%//recupera a sessao
+        HttpSession s = request.getSession(false);
+        UsuarioBean login = null;
+        if (s != null) {
+            login = (UsuarioBean) s.getAttribute("Usuario");
+        }
+        /*else{
+         response.sendRedirect("erro.jsp");
+         } */
+    %>

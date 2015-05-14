@@ -1,0 +1,100 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+body {
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.busca{
+	text-align: center;
+}
+
+.red{
+	color: red;
+	font-size: 20px;
+}
+
+.help-inline{
+	color: red;
+	font-size: 12px;
+}
+
+.hero-unit{
+    background-color: #E8E8BC;
+}
+
+.well{
+    background-color: #E8E8BC;
+}
+
+.well-small{
+    background-color: #f5f5f5;
+}
+
+.login{
+    color:white;
+    display: inline;
+}
+
+.apres{
+    font-size: 15px;
+    padding-bottom: 50px;
+}
+
+.acoes{
+    margin: 12px 0 0 0;
+    text-align: right;
+}
+
+#formDel{
+    display: inline;
+}
+
+#formEdit{
+    display: inline;
+}
+
+.idArtigo{
+    display: inline;
+    margin: 0 10px;
+}
+
+.titleArtigo{
+    width: 85%;
+    text-align: left;
+    line-height: 25px;
+    margin: 10px 0 0 29px;
+    font-size: 20px;
+    color: #55454f;
+}
+
+.pre-titles{
+    margin-left: 29px;
+}
+
+.informacoes{
+    margin-left: 29px;
+    margin-top: 10px;
+    color: lightslategrey;
+}
+
+.well-small:hover{
+    background-color: #DDDDDD;
+}
+
+#dropBusca{
+    text-align: left;
+    font-size: 12px;
+}
+
+#dropBusca li{
+    margin-left: 12px;
+}
+
+.refine{
+    font-size: 12px;
+    color: red;
+}

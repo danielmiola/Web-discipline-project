@@ -1,0 +1,44 @@
+<div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <div class="nav-collapse collapse">
+                        <ul class="nav">
+                            <li class="active"><a href="index.jsp">Página Principal</a></li>
+                                <% if (login != null) {%>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Avançado <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="cadastroArtigo.jsp">Cadastrar Article</a></li>
+                                    <li><a href="cadastroAuthor.jsp">Cadastrar Author</a></li>
+                                    <li><a href="cadastroJournal.jsp">Cadastrar Journal</a></li>
+                                </ul>
+                            </li>
+                            <%}else { %>
+                            <li>
+                                <a href="cadastroUsuario.jsp">Cadastre-se</a>                                
+                            </li>
+                            <%}%>
+                        </ul>
+
+                        <!--FORMULARIO DE LOGIN DE USUARIO-->
+                        <form class="navbar-form pull-right" method="post" action="ValidaLogin" onsubmit="return CheckAndSubmit ()">
+                            <% if (login != null) {%>
+                                <div class="login"> Bem Vindo <%= login.getEmail()%> </div>
+                                <input type="hidden" value="logout" name="tipo"/>                                
+                                <button type="submit" class="btn">Sair <b class="icon-remove"></b></button>
+                            <% } else {%>
+                                         <input class="span2" type="text" placeholder="Email" name="email" id="inputEmail">         
+                                        <input class="span2" type="password" placeholder="Senha" name="senha" id ="inputSenha">a
+                                <input type="hidden" value="login" name="tipo">
+                                <button type="submit" class="btn">Entrar <b class="icon-user"></b></button>
+                           <%}%>
+                        </form>
+                    </div><!--/.nav-collapse -->
+                </div>
+            </div>
+        </div>
